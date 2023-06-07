@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | xargs -n 5
+ls | tr n   | sed s/ $/n/
