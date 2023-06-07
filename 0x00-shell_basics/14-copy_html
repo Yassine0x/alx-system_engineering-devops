@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -u --exclude *.html --exclude .* --prune-empty-dirs --recursive --verbose --times --progress ./ ../
+find . -name *.html -newer ../ -exec cp -t .. {} +
